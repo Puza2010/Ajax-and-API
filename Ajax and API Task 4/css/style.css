@@ -15,10 +15,17 @@ body {margin: 0;}
   color: white;
 }
 /* BOARD */
+
 .board h1 {
-  margin-left: 8px;
+  text-align: center
 }
+
+.btn-column{
+  text-align: center
+}
+
 .column-container {
+  margin: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -27,18 +34,26 @@ body {margin: 0;}
 
 /* COLUMN */
 .column {
+  text-align: center;
   order: 1;
   min-width: 300px;
   min-height: 50vh;
   background-color: lightgrey;
-  margin-left: 8px;
+  margin: 10px;
   list-style: none;
   position: relative;
+  border: groove 1px black;
+}
+
+.column:hover {
+  background-color: grey;
 }
 .column-add-card {
+  padding: 5px;
+  margin: 0 auto;
   cursor: pointer;
-  text-decoration: underline;
-  margin: 5px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
   display: block;
 }
 
